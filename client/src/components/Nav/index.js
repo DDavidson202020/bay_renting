@@ -39,11 +39,10 @@ function Nav() {
 
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark mb-2">
-       <ul>
-      <li style={{"listStyleType": "none"}}><i className="fas fa-ship" style={{"color": "wheat","fontSize": "25px","marginTop": "15px"}}></i></li>
-      <li style={{"listStyleType": "none"}}><i class="fas fa-water"style={{"color": "wheat","fontSize": "25px"}}></i></li>
-      </ul>
-      <Link className="navbar-brand" to="/" style={{"fontFamily": "Dancing Script, cursive", "fontSize":"40px","marginLeft":"10px"}}>
+      
+      <i class="fas fa-warehouse" style={{"color": "wheat","fontSize": "25px", "marginLeft": "20px"}}></i>
+      
+      <Link className="navbar-brand" to="/" style={{"fontFamily": "Dancing Script, cursive", "fontSize":"40px","marginLeft":"15px"}}>
         Bay Renting 
         </Link>
       <div className={`${open ? "" : "collapse "}navbar-collapse`} id="navbarNav">
