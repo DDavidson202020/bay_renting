@@ -13,6 +13,7 @@ import { Container } from "./components/Grid";
 import ProtectedRoute from "./pages/ProtectedRoute";
 import './App.css';
 import { UserProvider } from "./utils/UserContext";
+import MainPage from "./components/MainPage";
 
 //Now we have all the stuff we need .. let's render some components with the Router
 const AuthExample = () => (
@@ -22,7 +23,7 @@ const AuthExample = () => (
 				<Nav className="App-header" />
 				<Container>
 					<Switch>
-						
+						<Route exact path="/" component={MainPage} />
 						<Route path="/login" component={Login} />
 						<Route path="/register" component={Register} />
 						<PrivateRoute path="/protected" component={ProtectedRoute} />
