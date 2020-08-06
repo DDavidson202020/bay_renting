@@ -10,7 +10,6 @@ import Nav from "./components/Nav";
 import Login from "./components/Login";
 import Register from "./components/Register";
 import { Container } from "./components/Grid";
-import PublicRoute from "./pages/PublicRoute";
 import ProtectedRoute from "./pages/ProtectedRoute";
 import './App.css';
 import { UserProvider } from "./utils/UserContext";
@@ -23,7 +22,7 @@ const AuthExample = () => (
 				<Nav className="App-header" />
 				<Container>
 					<Switch>
-						<Route path="/public" component={PublicRoute} />
+						
 						<Route path="/login" component={Login} />
 						<Route path="/register" component={Register} />
 						<PrivateRoute path="/protected" component={ProtectedRoute} />
